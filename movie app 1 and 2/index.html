@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maincontainer{
+            margin-top:-1%;
+           border: 1px solid white;
+           height: 225px;
+           width: 100%;
+           background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGAt7_9CuDdF5H_hosEZIz1hn52nUb9JoWQ&usqp=CAU");
+           background-repeat: no-repeat;
+            background-size: 100% 100%;
+           background-attachment: fixed;
+        }
+        #searchMovie{
+            margin-left: 38%;
+            font-size: 25px;
+            width: 200px;
+            border-radius:10px;
+        }
+        #searchMovie:hover{
+            background-color: salmon;
+        }
+        button{
+            background-color: teal;
+            color:aliceblue;
+            font-weight:550;
+            font-size: 25px;
+            width: 160px;
+            border-radius:10px;
+        }
+        button:hover{
+            background-color:  red;
+        }
+        #h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin-top: 5%;
+            margin-left: 500px;
+            grid-gap: 15px;
+        }
+        #container>div {
+            border : 3px solid gray;
+            background-color: aliceblue;
+            height: 610px;
+            width:430px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 15px;
+
+        }
+        #container>div>p:nth-child(2){
+            margin-top: 1px;
+        }
+        #container>div>p{        
+           font-size: 18px;
+           margin-top: -12px;
+        }
+
+    
+        img {
+            
+            height: 350px;
+            width: 100%;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <h1 id="h1">Movie app</h1>
+       <input type="search" id="searchMovie">
+       <button onclick="Movie()">Enter Movie</button>
+    </div>
+
+    <div id="container"></div>
+</body>
+</html>
+
+<script src="index.js"></script>
